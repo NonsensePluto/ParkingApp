@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingAppSolution.Service", "ParkingAppSolution.Service\ParkingAppSolution.Service.csproj", "{D42D87D7-12A3-4BD5-8D5B-3328F46EB832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingAppSolution.DataAccess", "ParkingAppSolution.DataAccess\ParkingAppSolution.DataAccess.csproj", "{69516ED8-02D3-4869-B27F-D87235AB065F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingAppSolution.Repository", "ParkingAppSolution.Repository\ParkingAppSolution.Repository.csproj", "{8F969243-96E6-45FE-9624-316A21877151}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D42D87D7-12A3-4BD5-8D5B-3328F46EB832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42D87D7-12A3-4BD5-8D5B-3328F46EB832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D42D87D7-12A3-4BD5-8D5B-3328F46EB832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D42D87D7-12A3-4BD5-8D5B-3328F46EB832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69516ED8-02D3-4869-B27F-D87235AB065F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69516ED8-02D3-4869-B27F-D87235AB065F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69516ED8-02D3-4869-B27F-D87235AB065F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69516ED8-02D3-4869-B27F-D87235AB065F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F969243-96E6-45FE-9624-316A21877151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F969243-96E6-45FE-9624-316A21877151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F969243-96E6-45FE-9624-316A21877151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F969243-96E6-45FE-9624-316A21877151}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
