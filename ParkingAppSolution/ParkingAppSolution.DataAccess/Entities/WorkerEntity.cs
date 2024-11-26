@@ -11,4 +11,8 @@ public class WorkerEntity:BaseEntity
     
     public int ParkingId { get; set; }
     public ParkingEntity Parking { get; set; }
+    
+    public DriverEntity Driver { get; set; }
+    
+    public SecurityEntity Security { get; set; }
 }

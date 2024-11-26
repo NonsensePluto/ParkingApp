@@ -42,7 +42,7 @@ public class ParkingDbContext:DbContext
         modelBuilder.Entity<ParkingPlaceTypeEntity>().HasKey(pk => pk.Id);
         
 
-        modelBuilder.Entity<ParkingPlaceEntity>().HasKey(pk => pk.ParkingPlaceType);
+        modelBuilder.Entity<ParkingPlaceEntity>().HasKey(pk => pk.Id);
         modelBuilder.Entity<ParkingPlaceEntity>().HasOne(pk => pk.ParkingPlaceType)
             .WithMany(p => p.ParkingPlaces)
             .HasForeignKey(pk => pk.Id);
@@ -53,8 +53,6 @@ public class ParkingDbContext:DbContext
         modelBuilder.Entity<ClientEntity>().HasOne(pk => pk.Pasport)
             .WithMany(p => p.Clients)
             .HasForeignKey(p => p.PasportNumber);
-        
-        modelBuilder.Entity<DriverEntity>().HasKey(pk => pk.Id);
         
         modelBuilder.Entity<CarTypeEntity>().HasKey(pk => pk.Id);
         modelBuilder.Entity<CarTypeEntity>().HasOne(pk => pk.DriverCategory)
@@ -92,8 +90,10 @@ public class ParkingDbContext:DbContext
             .WithMany(p => p.Workers)
             .HasForeignKey(pk => pk.PasportNumber);
         
-        modelBuilder.Entity<DriverEntity>().HasKey(pk => pk.Id);
-
+        modelBuilder.Entity<DriverEntity>()
+            .HasOne(pk => pk.Worker)
+            .WithOne(p => p.Driver);
+        
         modelBuilder.Entity<CarDriverEntity>().HasKey(pk => pk.Id);
         modelBuilder.Entity<CarDriverEntity>().HasOne(pk => pk.Driver)
             .WithMany(p => p.CarDrivers)
@@ -110,6 +110,7 @@ public class ParkingDbContext:DbContext
             .WithMany(p => p.DriverCategoriesDrivers)
             .HasForeignKey(pk => pk.DriverId);
         
-        modelBuilder.Entity<SecurityEntity>().HasKey(pk => pk.Id);
+        modelBuilder.Entity<SecurityEntity>().HasOne(pk => pk.Worker)
+            .WithOne(p => p.Security);
     }
 }

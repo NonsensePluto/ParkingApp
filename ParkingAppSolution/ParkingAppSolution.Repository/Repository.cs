@@ -1,7 +1,8 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
+using ParkingAppSolution.DataAccess.Entities;
 
-namespace ParkingAppSolution.Repository.obj;
+namespace ParkingAppSolution.Repository;
 
 
 public class Repository<T> : IRepository<T> where T : BaseEntity
