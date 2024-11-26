@@ -302,7 +302,7 @@ namespace ParkingAppSolution.DataAccess.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
-
+ 
             migrationBuilder.CreateTable(
                 name: "Contracts",
                 columns: table => new

@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using ParkingAppSolution.DataAccess;
 
 #nullable disable
-
+ 
 namespace ParkingAppSolution.DataAccess.Migrations
 {
     [DbContext(typeof(ParkingDbContext))]
